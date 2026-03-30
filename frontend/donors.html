@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Donors</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Donor Management</h2>
+
+<div class="form-card">
+<input type="text" id="name" placeholder="Name">
+<input type="text" id="blood" placeholder="Blood Type">
+<input type="text" id="contact" placeholder="Contact">
+<input type="date" id="date">
+<button onclick="addDonor()">Add Donor</button>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Blood</th>
+<th>Contact</th>
+<th>Last Donation</th>
+</tr>
+</thead>
+<tbody id="donorTable"></tbody>
+</table>
+
+</div>
+
+<script src="js/app.js"></script>
+<script>loadDonors()</script>
+</body>
+</html>

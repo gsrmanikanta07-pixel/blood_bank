@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Requests</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Blood Requests</h2>
+
+<div class="form-card">
+<input type="number" id="hospital_id" placeholder="Hospital ID">
+<input type="text" id="rblood" placeholder="Blood Type">
+<input type="number" id="rqty" placeholder="Quantity">
+<input type="date" id="rdate">
+<button onclick="addRequest()">Add Request</button>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Hospital</th>
+<th>Blood</th>
+<th>Qty</th>
+<th>Date</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody id="requestTable"></tbody>
+</table>
+
+</div>
+
+<script src="js/app.js"></script>
+<script>loadRequests()</script>
+</body>
+</html>

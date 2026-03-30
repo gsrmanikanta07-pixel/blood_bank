@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hospitals</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Hospitals</h2>
+
+<div class="form-card">
+<input type="text" id="hname" placeholder="Hospital Name">
+<input type="text" id="location" placeholder="Location">
+<input type="text" id="hcontact" placeholder="Contact">
+<button onclick="addHospital()">Add Hospital</button>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Location</th>
+<th>Contact</th>
+</tr>
+</thead>
+<tbody id="hospitalTable"></tbody>
+</table>
+
+</div>
+
+<script src="js/app.js"></script>
+<script>loadHospitals()</script>
+</body>
+</html>
